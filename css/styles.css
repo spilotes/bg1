@@ -4,32 +4,25 @@
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  background-image: url("https://images3.alphacoders.com/105/1053268.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-clip: initial;
-  animation: animate 90s ease-in-out infinite;
-  animation-delay: 1s;
-  width: 100vw;
-  height: 100vh;
+.wrapper {
   overflow-y: hidden;
   overflow-x: hidden;
 }
 
-@keyframes animate {
-  0%,
+.sliding-background {
+  background: url(../img/hashiras.jpg) repeat-x;
+  height: 100vh;
+  width: 6000px;
+  animation: slide 190s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
   100% {
-    background-position: left top;
-  }
-  25% {
-    background-position: right bottom;
-  }
-  50% {
-    background-position: left bottom;
-  }
-  75% {
-    background-position: right top;
+    transform: translate3d(-3840px, 0, 0);
   }
 }
 
