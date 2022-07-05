@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat;
   -webkit-background-clip: initial;
   animation: animate 90s ease-in-out infinite;
+  animation-delay: 1s;
   width: 100vw;
   height: 100vh;
   overflow-y: hidden;
